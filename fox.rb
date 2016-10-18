@@ -7,5 +7,9 @@ class Fox
    
   	end
 
+  	def get_sound
+  		name + " says " + sound
+  	end 
+
   
 end

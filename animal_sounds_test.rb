@@ -9,18 +9,21 @@ class TestAnimalSounds <Minitest::Test
 		animal = Cat.new("Kitty")
 		assert_equal("Kitty", animal.name)
 		assert_equal("meow", animal.sound)
+		assert_equal("Kitty says meow", animal.get_sound)
 	end	
 
 	def test_dog_name
 		animal = Dog.new("Puppy")
 		assert_equal("Puppy", animal.name)
 		assert_equal("Bark", animal.sound)
+		assert_equal("Puppy says Bark", animal.get_sound)
 	end
 
 	def test_fox_name
 		animal = Fox.new("Foxi")
 		assert_equal("Foxi", animal.name)
 		assert_equal("Ringading", animal.sound)
+		assert_equal("Foxi says Ringading", animal.get_sound)
 	end
 
 	# def test_valid_check_ten_X
